@@ -20,7 +20,7 @@ const useCrud = () => {
       .catch(err => console.log(err))
   }
   const deleteUserById = (id) => {
-    const URL = `http://users-crud.academlo.tech/users/${id}/`
+    const URL = `https://users-crud.academlo.tech/users/${id}/`
     axios.delete(URL)
     .then(() => getAllUsers())
       .catch(err => console.log(err))
